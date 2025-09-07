@@ -1,6 +1,37 @@
 {% extends "hogwarts/base.html" %}
-{% block title %}Inicio - Hogwarts{% endblock %}
+
+{% block title %}Harry Potter{% endblock %}
+
 {% block content %}
+<!-- Modal inicial solo con imagen -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="modal-header border-0 p-2">
+        <!-- Botón de cerrar -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://i.pinimg.com/1200x/ed/c1/0e/edc10eb212e80f2fc220c3b159b6d1a9.jpg"
+             alt="Harry Potter"
+             class="img-fluid rounded"
+             style="width: auto; height: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script para mostrar modal automáticamente -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var modalEl = document.getElementById('imageModal');
+    var myModal = new bootstrap.Modal(modalEl);
+    myModal.show();
+});
+</script>
+<div class="container text-center my-5">
     <h1>Bienvenido a Hogwarts</h1>
-    <p>Explora el mundo mágico de Harry Potter.</p>
+    <p class="im-fell-english-sc-regular">Explora la magia de Harry Potter ✨</p>
+</div>
+
 {% endblock %}

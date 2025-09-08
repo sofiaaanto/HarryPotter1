@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Hogwarts{% endblock %}</title>
-    
-    <!-- Bootstrap desde CDN -->
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/HP_-_Harry_Potter_wordmark.svg/822px-HP_-_Harry_Potter_wordmark.svg.png?20120917184956">
+
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <! -- Bootstrap JS Bundle con Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Pirata+One&display=swap" rel="stylesheet">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <style>
         .body { font-family: 'Roboto', sans-serif; }
         h1, h3, h4 { font-family: 'Cinzel', serif; }
         h2 { font-family: 'IM Fell English SC', serif; }
         .footer { background: #01000b; color: white; padding: 20px 0; }
-        .banner { background-color: #000000ee; padding: 10px 0; margin-bottom: 20px; font-family: 'Cinzel'; }
-        .container { background-color: #01000b; color: white; position: relative;}
-        body {
-            background-image: url('https://i.pinimg.com/1200x/35/00/cb/3500cb8463123d1607e3dc9763ed40b4.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* opcional: que no se mueva al hacer scroll */
-            color: white; /* texto visible */
+        .banner { background-color: #000000; padding: 10px 0; margin-bottom: 20px; font-family: 'Cinzel'; }
+        .container { background-color: #000001; color: white; position: relative;}
+        body{
+            background: #000000;
+            background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(8, 8, 54, 1) 25%, rgba(24, 24, 140, 1) 50%, rgba(8, 8, 54, 1) 75%, rgba(0, 0, 0, 1) 100%);
         }
         .im-fell-english-sc-regular {
             font-family: "IM Fell English SC", serif;
@@ -39,10 +38,6 @@
             font-family: "Pirata One", system-ui;
             font-weight: 400;
             font-style: normal;
-        }
-        .magic-img {
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-            cursor: pointer;
         }
 
         .magic-img.active {
@@ -74,6 +69,14 @@
             bottom: 40px;
             left: 40px;
         }
+        .banner-hogwarts {
+            padding: 80px;
+            background: url("https://contentful.harrypotter.com/usf1vwtuqyxm/7EsDSrJhr0pNwUNK8lrUwY/f8d7e5101de6dda8f46c0f94673087a9/HP-Hogwarts-39PHOTOBU17074_PHUP_HP.jpg?q=75&fm=jpg&w=2560")
+            no-repeat top center;
+            background-position: center 40%;
+            color: rgb(255, 255, 255);   
+            border-radius: 15px;      /* opcional: bordes suaves */
+        }
 
     </style>
 
@@ -90,9 +93,12 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/">Harry Potter</a>
+            <a class="navbar-brand" href="/"><img src="https://i.pinimg.com/1200x/04/de/6c/04de6c54756002cfc7ada5dbd6722629.jpg" 
+                alt="Harry Potter"
+                width="8%"
+                height="auto"></a>
             <div>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
@@ -128,7 +134,7 @@
 
     <!-- Footer -->
     <footer class="text-center">
-        <p>© 2025 Hogwarts Fan Page | Inspirado en Harry Potter</p>
+        <p style="color: #FFFFFF;">© 2025 Hogwarts Fan Page | Inspirado en Harry Potter</p>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

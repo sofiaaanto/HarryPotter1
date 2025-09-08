@@ -31,17 +31,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<!-- Bienvenida -->
-<div class="container text-center my-5">
-    <h1>Bienvenido a Hogwarts</h1>
-    <p class="im-fell-english-sc-regular">Explora la magia de Harry Potter ✨</p>
+<div class="container text-center my-5 banner-hogwarts">
+  <h1 class="animate__animated animate__fadeInUp" style="text-shadow: 9cm; text-rendering: optimizeLegibility;">Bienvenido a Hogwarts</h1>
+  <h4 class="im-fell-english-sc-regular" style="text-shadow: 3cm;">Explora la magia de Harry Potter</h4>
 </div>
 
-<div class="container text-center my-5">
-    <p>Adéntrate en un universo lleno de hechizos, aventuras y criaturas fantásticas. Explora los libros que nos hicieron soñar, revive las películas que nos transportaron a lugares extraordinarios, y conoce a los personajes que han conquistado nuestros corazones. Prepárate para descubrir la magia que habita en cada rincón de este mundo encantado.</p>
+
+<div class="container text-center my-5" style="padding-bottom: 5%;">
+    <h2>Adéntrate en un universo lleno de hechizos, aventuras y criaturas fantásticas. Explora los libros que nos hicieron soñar, revive las películas que nos transportaron a lugares extraordinarios, y conoce algunos de los personajes de la saga. Prepárate para descubrir la magia de Hogwarts.</h2>
 </div>
 
-<div class="container text-center my-5" style="position: relative;">
+
+<div class="container text-center my-5">
+  <div class="title houses text-center">
+    <h1 style="font-size: 2.3rem;">Conoce las casas de Hogwarts</h1>
+  </div>
+</div>
+
+<div class="container text-center my-5" style="position: relative; padding:10px">
+
     <img src="https://i.pinimg.com/736x/5c/35/2d/5c352d78f495272092cb1fde169282df.jpg"
          alt="Harry Potter"
          class="magic-img img-fluid"
@@ -55,18 +63,21 @@ document.addEventListener("DOMContentLoaded", function() {
              style="max-width: 50%; margin: auto; display: block;">
     </div>
 
+    <!-- Imagen esquina superior izquierda -->
     <div class="imagen-esquina-superior-izquierda">
         <img src="https://1000logos.net/wp-content/uploads/2021/11/Gryffindor-Logo-768x432.png"
              alt="Gryffindor Logo"
              style="max-width: 50%; margin: auto; display: block;">
     </div>
 
+    <!-- Imagen esquina inferior derecha -->
     <div class="imagen-esquina-inferior-derecha">
         <img src="https://vectorseek.com/wp-content/uploads/2023/08/Ravenclaw-Logo-Vector.svg-.png"
              alt="Ravenclaw Logo"
              style="max-width: 100%; margin: auto; display: inline-block;">
     </div>
 
+    <!-- Imagen esquina inferior izquierda -->
     <div class="imagen-esquina-inferior-izquierda">
         <img src="https://1000logos.net/wp-content/uploads/2023/08/Hufflepuff-Logo-768x432.png"
              alt="HufflepuffLogo"
@@ -74,17 +85,17 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </div>
 
-<!-- Script efecto mágico -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const img = document.getElementById("magicImage");
-    img.addEventListener("click", () => {
-        img.classList.add("active");
-        setTimeout(() => {
-            img.classList.remove("active");
-        }, 500);
-    });
-});
-</script>
+
+<div>
+  <h1 class="text-center" style="padding-top: 10%;">Un Breve Recorrido por Hogwarts</h1>
+  <div>
+    <h2 class="text-center"> Explora los Libros, Películas y Personajes de la Saga</h2>
+    <div class="text-center">
+      <img src="https://i.pinimg.com/originals/4b/b9/6a/4bb96a34588bf915c99a0748419c2627.gif" alt="cd">
+    </div>
+  </div>
+
+  </div>
+</div>
 
 {% endblock %}

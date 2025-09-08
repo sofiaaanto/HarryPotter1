@@ -20,8 +20,8 @@
     />
     <style>
         .body { font-family: 'Roboto', sans-serif; }
-        h1, h3, h4 { font-family: 'Cinzel', serif; }
-        h2 { font-family: 'IM Fell English SC', serif; }
+        h1, h3 { font-family: 'Cinzel', serif; }
+        h2, h4 { font-family: 'IM Fell English SC', serif; }
         .footer { background: #01000b; color: white; padding: 20px 0; }
         .banner { background-color: #000000; padding: 10px 0; margin-bottom: 20px; font-family: 'Cinzel'; }
         .container { background-color: #000001; color: white; position: relative;}
@@ -77,7 +77,14 @@
             color: rgb(255, 255, 255);   
             border-radius: 15px;      /* opcional: bordes suaves */
         }
-
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+            gap: 30px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     </style>
 
 </head>

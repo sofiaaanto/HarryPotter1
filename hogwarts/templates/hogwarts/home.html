@@ -3,6 +3,7 @@
 {% block title %}Harry Potter{% endblock %}
 
 {% block content %}
+
 <!-- Modal inicial solo con imagen -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -29,9 +30,61 @@ document.addEventListener("DOMContentLoaded", function() {
     myModal.show();
 });
 </script>
+
+<!-- Bienvenida -->
 <div class="container text-center my-5">
     <h1>Bienvenido a Hogwarts</h1>
     <p class="im-fell-english-sc-regular">Explora la magia de Harry Potter ✨</p>
 </div>
+
+<div class="container text-center my-5">
+    <p>Adéntrate en un universo lleno de hechizos, aventuras y criaturas fantásticas. Explora los libros que nos hicieron soñar, revive las películas que nos transportaron a lugares extraordinarios, y conoce a los personajes que han conquistado nuestros corazones. Prepárate para descubrir la magia que habita en cada rincón de este mundo encantado.</p>
+</div>
+
+<div class="container text-center my-5" style="position: relative;">
+    <img src="https://i.pinimg.com/736x/5c/35/2d/5c352d78f495272092cb1fde169282df.jpg"
+         alt="Harry Potter"
+         class="magic-img img-fluid"
+         id="magicImage"
+         style="max-width: 300px; margin: auto; display: block; cursor:pointer; transition: all 0.3s ease;">
+
+    <!-- Imagen esquina superior derecha -->
+    <div class="imagen-esquina-superior-derecha">
+        <img src="https://1000logos.net/wp-content/uploads/2023/05/Slytherin-Logo-768x432.png"
+             alt="Slytherin Logo"
+             style="max-width: 50%; margin: auto; display: block;">
+    </div>
+
+    <div class="imagen-esquina-superior-izquierda">
+        <img src="https://1000logos.net/wp-content/uploads/2021/11/Gryffindor-Logo-768x432.png"
+             alt="Gryffindor Logo"
+             style="max-width: 50%; margin: auto; display: block;">
+    </div>
+
+    <div class="imagen-esquina-inferior-derecha">
+        <img src="https://vectorseek.com/wp-content/uploads/2023/08/Ravenclaw-Logo-Vector.svg-.png"
+             alt="Ravenclaw Logo"
+             style="max-width: 100%; margin: auto; display: inline-block;">
+    </div>
+
+    <div class="imagen-esquina-inferior-izquierda">
+        <img src="https://1000logos.net/wp-content/uploads/2023/08/Hufflepuff-Logo-768x432.png"
+             alt="HufflepuffLogo"
+             style="max-width: 50%; margin: auto; display: block;">
+    </div>
+</div>
+
+<!-- Script efecto mágico -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const img = document.getElementById("magicImage");
+    img.addEventListener("click", () => {
+        img.classList.add("active");
+        setTimeout(() => {
+            img.classList.remove("active");
+        }, 500);
+    });
+});
+</script>
 
 {% endblock %}

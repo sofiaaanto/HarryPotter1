@@ -21,7 +21,7 @@
         h2 { font-family: 'IM Fell English SC', serif; }
         .footer { background: #01000b; color: white; padding: 20px 0; }
         .banner { background-color: #000000ee; padding: 10px 0; margin-bottom: 20px; font-family: 'Cinzel'; }
-        .container { background-color: #01000b; color: white; }
+        .container { background-color: #01000b; color: white; position: relative;}
         body {
             background-image: url('https://i.pinimg.com/1200x/35/00/cb/3500cb8463123d1607e3dc9763ed40b4.jpg');
             background-size: cover;
@@ -40,7 +40,40 @@
             font-weight: 400;
             font-style: normal;
         }
+        .magic-img {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
 
+        .magic-img.active {
+            box-shadow: 0 0 30px 10px #fdd835, 0 0 50px 20px #ffeb3b;
+            transform: scale(1.1);
+        }
+
+        .imagen-esquina-superior-derecha {
+            position: absolute; 
+            top: 40px;
+            right: 40px;
+        }
+        .imagen-esquina-superior-izquierda {
+            position: absolute; 
+            top: 40px;
+            left: 40px;
+        }
+        .imagen-esquina-inferior-derecha {
+            position: absolute; 
+            bottom: 40px;
+            right: 340px;
+            width: 180px;
+            height: auto;
+
+        }
+
+        .imagen-esquina-inferior-izquierda {
+            position: absolute; 
+            bottom: 40px;
+            left: 40px;
+        }
 
     </style>
 

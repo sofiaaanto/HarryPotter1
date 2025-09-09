@@ -4,12 +4,11 @@
 
 {% block content %}
 
-<!-- Modal inicial solo con imagen -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content border-0 bg-transparent">
       <div class="modal-header border-0 p-2">
-        <!-- Botón de cerrar -->
+
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body p-0">
@@ -22,7 +21,7 @@
   </div>
 </div>
 
-<!-- Script para mostrar modal automáticamente -->
+<!-- Muestra carta inicial automáticamente -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var modalEl = document.getElementById('imageModal');
